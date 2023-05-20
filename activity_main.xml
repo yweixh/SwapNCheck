@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstInput"
+        />
+    <Button
+        android:id="@+id/swap_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/firstInput"
+        android:layout_marginLeft="15dp"
+        android:text="@string/swap"
+        android:onClick="onSwap"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondInput"
+        android:layout_below="@id/firstInput"
+        />
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstInput"
+        android:layout_toRightOf="@id/secondInput"
+        android:layout_marginLeft="15dp"
+        android:text="@string/check"
+        android:onClick="onCheck"/>
+
+</RelativeLayout>
+
+
+
+
+
+
